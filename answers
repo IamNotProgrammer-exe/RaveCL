@@ -1,0 +1,37 @@
+public class LogicalOperatorsTest {
+    public static void main(String[] args) {
+        // Code 1: Missing Logical Operators Test
+        boolean a = true;
+        boolean b = false;
+        boolean c = true;
+        System.out.println("Test 1: " + (a && b));  // Expected: false
+        System.out.println("Test 2: " + (a || c));  // Expected: true
+        System.out.println("Test 3: " + (!b || c)); // Expected: true
+        System.out.println("Test 4: " + ((a && b) || !c)); // Expected: false
+
+        // Code 2: Basic AND (&&) and OR (||) Test
+        boolean x = true;
+        boolean y = false;
+        System.out.println("Test 5: " + (x && y));  // Expected: false
+        System.out.println("Test 6: " + (x || y));  // Expected: true
+
+        // Code 3: NOT (!) and Combination Test
+        boolean d = false;
+        boolean e = true;
+        System.out.println("Test 7: " + (!d || e));  // Expected: true
+        System.out.println("Test 8: " + (!e && d));  // Expected: false
+
+        // Code 4: Complex Condition Test
+        boolean p = true;
+        boolean q = false;
+        boolean r = true;
+        System.out.println("Test 9: " + ((p || q) && r));  // Expected: true
+        System.out.println("Test 10: " + (p && (q || r)));  // Expected: false
+
+        // Code 5: Nested Logical Expressions
+        boolean m = false;
+        boolean n = true;
+        System.out.println("Test 11: " + (!m || n));   // Expected: true
+        System.out.println("Test 12: " + (!(m && n))); // Expected: true
+    }
+}
