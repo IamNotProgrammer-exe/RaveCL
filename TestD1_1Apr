@@ -31,3 +31,66 @@ public class FavoriteBook {
 
     }
 }
+
+
+// 🔹 Replace __ with the correct logical operators (&&, ||, !).
+
+public class LogicalTest {
+    public static void main(String[] args) {
+        boolean a = true;
+        boolean b = false;
+        boolean c = true;
+
+        // Fill in the correct logical operators
+        System.out.println("Test 1: " + (a __ b));  // Expected: false
+        System.out.println("Test 2: " + (a __ c));  // Expected: true
+        System.out.println("Test 3: " + (!b __ c)); // Expected: true
+        System.out.println("Test 4: " + ((a __ b) __ !c)); // Expected: false
+    }
+}
+
+//test 2 ✅ Hint: One line requires &&, and the other requires ||.
+
+public class LogicalTest1 {
+    public static void main(String[] args) {
+        boolean x = true;
+        boolean y = false;
+
+        System.out.println("Test 1: " + (x __ y));  // Expected: false
+        System.out.println("Test 2: " + (x __ y));  // Expected: true
+    }
+}
+
+//tst 3 ✅ Hint: Use ! (NOT) in combination with another operator.
+public class LogicalTest2 {
+    public static void main(String[] args) {
+        boolean a = false;
+        boolean b = true;
+
+        System.out.println("Test 3: " + (!a __ b));  // Expected: true
+        System.out.println("Test 4: " + (!b __ a));  // Expected: false
+    }
+}
+//test 4 Complex: Hint: You need to mix && and || carefully.
+
+public class LogicalTest3 {
+    public static void main(String[] args) {
+        boolean p = true;
+        boolean q = false;
+        boolean r = true;
+
+        System.out.println("Test 5: " + ((p __ q) __ r));  // Expected: true
+        System.out.println("Test 6: " + (p __ (q __ r)));  // Expected: false
+    }
+}
+
+// test 5 Nested logical expressions ✅ Hint: One line involves a double negation or parentheses placement.
+public class LogicalTest4 {
+    public static void main(String[] args) {
+        boolean m = false;
+        boolean n = true;
+
+        System.out.println("Test 7: " + (!m __ n));  // Expected: true
+        System.out.println("Test 8: " + (!(m __ n))); // Expected: false
+    }
+}
