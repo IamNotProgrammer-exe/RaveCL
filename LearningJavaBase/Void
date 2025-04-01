@@ -1,0 +1,52 @@
+Void 
+
+/* 
+If you want to **store the result** in the Java terminal and not just print it inside the method, you need to use a **return type instead of `void`**. Here’s how:
+
+1. 
+
+### ✅ **Returning a Value (Storing Result in Terminal)**
+```java
+public class Example {
+    public static int sum(int a, int b) {
+        return a + b;  // Returns the sum instead of printing
+    }
+
+    public static void main(String[] args) {
+        int result = sum(10, 20);  // Store the returned value
+        System.out.println("Sum: " + result);  // Now print the stored value
+    }
+}
+
+
+ Expected Output in Java Terminal**
+```
+Sum: 30
+```
+
+*/
+
+
+
+2. 
+*/
+❌ **Using `void` (Can't Store Result)**
+If you use `void`, you **cannot store** the result:
+
+```java
+public class Example {
+    public static void sum(int a, int b) {
+        System.out.println("Sum: " + (a + b)); // Only prints, no return
+    }
+
+    public static void main(String[] args) {
+        int result = sum(10, 20);  // ❌ ERROR! sum() does not return anything
+    }
+}
+```
+This **will not work** because `void` means "no return value," so `result = sum(10, 20);` is invalid.
+
+*/
+
+### **🚀 Final Answer**
+If you need to **store the result in a variable** for later use, **use a return type (`int`, `double`, etc.) instead of `void`**.
