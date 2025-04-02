@@ -27,7 +27,15 @@ public class FavoriteBook {
     public static void main(String args[]) {
 
 
-	//TODO: Your code goes here
+	String title = "Back to the future";
+        String author = "Elnura & Wojtek";
+        int pages = 90;
+        double prize = 19.90;
+
+        System.out.println(" Title of the book is: " + title);
+        System.out.println(" The book is write by: " + author);
+        System.out.println(" The number of pages: " + pages);
+        System.out.println(" The book costs: " + prize); 
 
 
     }
@@ -43,10 +51,10 @@ public class LogicalTest {
         boolean c = true;
 
         // Fill in the correct logical operators
-        System.out.println("Test 1: " + (a __ b));  // Expected: false
-        System.out.println("Test 2: " + (a __ c));  // Expected: true
-        System.out.println("Test 3: " + (!b __ c)); // Expected: true
-        System.out.println("Test 4: " + ((a __ b) __ !c)); // Expected: false
+        System.out.println("Test 1: " + (a && b));
+        System.out.println("Test 2: " + (a && c));
+        System.out.println("Test 3: " + (b || c));
+        System.out.println("Test 4: " + ((a || b) &!c));
     }
 }
 
@@ -57,8 +65,8 @@ public class LogicalTest1 {
         boolean x = true;
         boolean y = false;
 
-        System.out.println("Test 1: " + (x __ y));  // Expected: false
-        System.out.println("Test 2: " + (x __ y));  // Expected: true
+        System.out.println("Test 1: " + (x && y));
+        System.out.println("Test 2: " + (x || y));
     }
 }
 
@@ -68,8 +76,8 @@ public class LogicalTest2 {
         boolean a = false;
         boolean b = true;
 
-        System.out.println("Test 3: " + (!a __ b));  // Expected: true
-        System.out.println("Test 4: " + (!b __ a));  // Expected: false
+        System.out.println("Test 1: " + (!a && b));
+        System.out.println("Test 2: " + (!b || a));
     }
 }
 //test 4 Complex: Hint: You need to mix && and || carefully.
@@ -80,8 +88,8 @@ public class LogicalTest3 {
         boolean q = false;
         boolean r = true;
 
-        System.out.println("Test 5: " + ((p __ q) __ r));  // Expected: true
-        System.out.println("Test 6: " + (p __ (q __ r)));  // Expected: false
+        System.out.println("Test 1: " + ((p || q) && r));
+        System.out.println("Test 2: " + (p && (q && r)));
     }
 }
 
@@ -91,7 +99,7 @@ public class LogicalTest4 {
         boolean m = false;
         boolean n = true;
 
-        System.out.println("Test 7: " + (!m __ n));  // Expected: true
-        System.out.println("Test 8: " + (!(m __ n))); // Expected: false
+        System.out.println("Test 1: " + (!m && n ));
+        System.out.println("Test 2: " + (!(m || n )));
     }
 }
