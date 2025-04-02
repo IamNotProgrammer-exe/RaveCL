@@ -9,4 +9,28 @@ public class CurrencyConversion {
 
 
 /*
+Imagine you and your friends have decided to go on a trip to Europe. Because you live in America, US Dollars (USD) will not be a valid currency for European transactions, so you will have to convert them to Euros (EUR). 
 
+You have the following data:
+
+Amount in USD = 100
+
+Exchange rate of 1 USD = 0.85 EUR
+
+Expenditure = 55 EUR
+
+After expenditure = 45 EUR
+
+Your challenge is to write the missing part of the code to get the desired output.
+
+Requirements:
+Complete these steps in the interactive code block:
+1. Declare and initialize two double variables as below:
+2. double amountInUSD = 100.0; 
+3. double exchangeRateUSDToEUR = 0.85;  (1 USD = 0.85 EUR)
+4. Print the initial amount in USD, i.e., 100.0 USD.
+5. Perform the operation:  amountInUSD *= exchangeRateUSDToEUR  
+6. Print the amount in EUR after conversion, i.e., 85 EUR.
+7. Deduct 55 EUR as the stated expenditure and print the balance, i.e., 30 EUR.
+8. Convert the remaining 30 EUR to USD.
+9. Print the amount in USD after converting it back to USD from EUR.
