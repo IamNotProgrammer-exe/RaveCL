@@ -1,0 +1,20 @@
+public class Test2 {
+    public static void main(String args[]){
+        double amountInUSD = 100.0;
+        double exchangeRateUSDToEUR = 0.85;
+        System.out.println("You have: " + amountInUSD + " USD");
+
+        double afterExchange = amountInUSD *= exchangeRateUSDToEUR;
+        System.out.println("After exchange: " + afterExchange + " EUR");
+
+        double expense = afterExchange - 55;
+        System.out.println("Cash left: " + expense + " EUR");
+
+        double afterExpense = expense /= exchangeRateUSDToEUR;
+        System.out.printf("After expense you have: $%.2f", afterExpense);
+
+        double EURLeft = afterExpense *= exchangeRateUSDToEUR;
+        System.out.println("---------");
+        System.out.printf("After exchange you have E%.2f", EURLeft);
+    }
+}
