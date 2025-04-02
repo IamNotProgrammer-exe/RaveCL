@@ -34,3 +34,10 @@ Complete these steps in the interactive code block:
 5. Deduct 55 EUR as the stated expenditure and print the balance, i.e., 30 EUR.
 6. Convert the remaining 30 EUR to USD.
 7. Print the amount in USD after converting it back to USD from EUR.
+
+Tip
+
+The computed value of double variables can sometimes result in many decimal places. For example, it could look like this: 35.294117647058826. To format the output of the decimal places to two digit decimal place, you use System.out.printf(), and %.2f .   For example:
+System.out.printf(“Amount in USD is $%.2f”, value);
+The output will be: Amount in USD is $35.29.
+Notice that when using %.2f  you use , instead of  + to concatenate the String and double value. 
